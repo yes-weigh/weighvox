@@ -4,7 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>404 Not Found</title>
   <link rel="stylesheet" href="../../../error_docs/styles.css/index.html">
-</head>
+
+    <!-- CookieConsent -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": { "background": "#237afc" },
+                    "button": { "background": "#fff", "text": "#237afc" }
+                },
+                "type": "opt-in",
+                "content": { "href": "https://weighvox.com/" }
+            });
+        });
+    </script>
+    </head>
 <body>
 <div class="page">
   <div class="main">
