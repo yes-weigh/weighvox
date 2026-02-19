@@ -1,3 +1,4 @@
+
 /*
 * jQuery Background video plugin for jQuery
 * ---
@@ -7,6 +8,8 @@
 */
 
 (function ($) {
+  // Debug log
+  console.log("BackgroundVideo IIFE running. jQuery available:", !!$);
 
   $.backgroundVideo = function (el, options) {
 
@@ -122,18 +125,26 @@
     $(window).resize(function () { setProportion(); });
     plugin.$videoEl.bind('ended', function () { this.play(); });
   }
+
+  console.log("$.backgroundVideo assigned:", !!$.backgroundVideo);
 })(jQuery);
-// JavaScript Document
+
+// Usage
 $(document).ready(function () {
-  var videobackground = new $.backgroundVideo($('#video-container'), {
-    "align": "centerXY",
-    "width": 1280,
-    "height": 720,
-    "path": "assets/video/",
-    "filename": "video",
-    "types": ["mp4", "webm"],
-    "preload": true,
-    "autoplay": true,
-    "loop": true
-  });
+  console.log("BackgroundVideo Ready. Constructor:", $.backgroundVideo);
+  if (typeof $.backgroundVideo === 'function') {
+    var videobackground = new $.backgroundVideo($('#video-container'), {
+      "align": "centerXY",
+      "width": 1280,
+      "height": 720,
+      "path": "assets/video/",
+      "filename": "video",
+      "types": ["mp4", "webm"],
+      "preload": true,
+      "autoplay": true,
+      "loop": true
+    });
+  } else {
+    console.warn("Skipping background video init: $.backgroundVideo is undefined");
+  }
 });
