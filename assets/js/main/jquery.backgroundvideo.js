@@ -1,17 +1,3 @@
-// JavaScript Document
-$(document).ready(function () {
-  var videobackground = new $.backgroundVideo($('#video-container'), {
-    "align": "centerXY",
-    "width": 1280,
-    "height": 720,
-    "path": "assets/video/",
-    "filename": "video",
-    "types": ["mp4", "webm"],
-    "preload": true,
-    "autoplay": true,
-    "loop": true
-  });
-});
 /*
 * jQuery Background video plugin for jQuery
 * ---
@@ -137,3 +123,17 @@ $(document).ready(function () {
     plugin.$videoEl.bind('ended', function () { this.play(); });
   }
 })(jQuery);
+// JavaScript Document
+$(document).ready(function () {
+  var videobackground = new $.backgroundVideo($('#video-container'), {
+    "align": "centerXY",
+    "width": 1280,
+    "height": 720,
+    "path": "assets/video/",
+    "filename": "video",
+    "types": ["mp4", "webm"],
+    "preload": true,
+    "autoplay": true,
+    "loop": true
+  });
+});
