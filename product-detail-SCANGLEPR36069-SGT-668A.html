@@ -255,6 +255,7 @@
     </style>
 
 
+<script src="assets/js/core/jquery.min.js"></script>
 </head>
 
 <body id="topPage" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -1556,7 +1557,7 @@ Corporate Office</p>
 
     <!-- JQuery Core
      =====================================-->
-    <script src="assets/js/core/jquery.min.js"></script>
+    
     <script src="assets/js/core/bootstrap-3.3.7.min.js"></script>
     <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
@@ -1586,7 +1587,9 @@ Corporate Office</p>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js"
         data-cfasync="false"></script>
     <script>
-        window.cookieconsent.initialise({
+        window.addEventListener("load", function(){
+                    if (window.cookieconsent) {
+                        window.cookieconsent.initialise({
             "palette": {
                 "popup": {
                     "background": "#237afc"
@@ -1601,6 +1604,8 @@ Corporate Office</p>
                 "href": "https://weighvox.com/"
             }
         });
+                    }
+                });
     </script>
 
 

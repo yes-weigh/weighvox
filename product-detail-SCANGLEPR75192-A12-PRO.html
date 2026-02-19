@@ -245,7 +245,8 @@ src="https://www.facebook.com/tr?id=278827848256672&ev=PageView&noscript=1"
   </style>   
         
         
-    </head>
+    <script src="assets/js/core/jquery.min.js"></script>
+</head>
     <body id="topPage" data-spy="scroll" data-target=".navbar" data-offset="100">
         
         
@@ -1384,7 +1385,7 @@ Copyright <i class="bx bx-copyright"></i>2024 Weighvox |  Powered By
 
      <!-- JQuery Core
      =====================================-->
-     <script src="assets/js/core/jquery.min.js"></script>
+     
      <script src="assets/js/core/bootstrap-3.3.7.min.js"></script>
              <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
      <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
@@ -1413,7 +1414,9 @@ Copyright <i class="bx bx-copyright"></i>2024 Weighvox |  Powered By
      =====================================-->
       <script src="https://cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
-window.cookieconsent.initialise({
+window.addEventListener("load", function(){
+                    if (window.cookieconsent) {
+                        window.cookieconsent.initialise({
   "palette": {
     "popup": {
       "background": "#237afc"
@@ -1428,6 +1431,8 @@ window.cookieconsent.initialise({
     "href": "https://weighvox.com/"
   }
 });
+                    }
+                });
 </script>
     
 
