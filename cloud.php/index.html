@@ -1057,7 +1057,11 @@ Copyright <i class="bx bx-copyright"></i>2024 Weighvox |  Powered By
      =====================================-->
       <script src="https://cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
-window.cookieconsent.initialise({
+
+/* CookieConsent Safe Load */
+window.addEventListener("load", function(){
+    if (window.cookieconsent) {
+        window.cookieconsent.initialise({
   "palette": {
     "popup": {
       "background": "#237afc"
@@ -1071,6 +1075,10 @@ window.cookieconsent.initialise({
   "content": {
     "href": "https://weighvox.com/"
   }
+});
+    } else {
+        console.warn("CookieConsent not loaded");
+    }
 });
 </script>
     

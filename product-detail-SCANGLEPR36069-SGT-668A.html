@@ -1630,7 +1630,11 @@ Corporate Office</p>
     <script>
         window.addEventListener("load", function(){
                     if (window.cookieconsent) {
-                        window.cookieconsent.initialise({
+                        
+/* CookieConsent Safe Load */
+window.addEventListener("load", function(){
+    if (window.cookieconsent) {
+        window.cookieconsent.initialise({
             "palette": {
                 "popup": {
                     "background": "#237afc"
@@ -1645,6 +1649,10 @@ Corporate Office</p>
                 "href": "https://weighvox.com/"
             }
         });
+    } else {
+        console.warn("CookieConsent not loaded");
+    }
+});
                     }
                 });
     </script>
