@@ -96,14 +96,29 @@
         <![endif]-->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.css">
-    <style>
-        .cc-window { position: fixed !important; bottom: 0 !important; top: auto !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 9999 !important; }
-    </style>
-
-
+    <!-- CookieConsent -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": { "background": "#237afc" },
+                    "button": { "background": "#fff", "text": "#237afc" }
+                },
+                "position": "bottom",
+                "type": "opt-in",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "dismiss": "Decline",
+                    "allow": "Allow cookies",
+                    "link": "Learn more",
+                    "href": "https://yes-weigh.github.io/weighvox/privacy.html"
+                }
+            });
+        });
+    </script>
     <style>
         .switch {
-            position: relative;
             display: inline-block;
             margin: 10px 18px;
             margin-top: 21px;
@@ -241,58 +256,43 @@
 
 
 
-<style>
-/* Fix Mega Menu Background & Text */
-.megamenu .dropdown-menu,
-.megamenu .dropdown-menu .tab-pane,
-.megamenu .nav-tabs,
-.megamenu .dropdown-menu .dropdown-menu {
-    background-color: #ffffff !important;
-    color: #333333 !important;
-}
-.megamenu .dropdown-menu .withoutdesc ul li a {
-     color: #333333 !important;
-}
-.megamenu .dropdown-menu a,
-.megamenu .dropdown-menu h5 {
-    color: #333333 !important;
-}
-.megamenu .dropdown-menu a:hover {
-    color: #319ccd !important;
-    text-decoration: none !important;
-}
-.megamenu .dropdown-menu h5 a {
-    color: #333333 !important;
-    font-weight: bold !important;
-}
-/* Ensure product grid text is visible */
-.megamenu .team h5 {
-    color: #333333 !important;
-}
-</style>
+    <style>
+        /* Fix Mega Menu Background & Text */
+        .megamenu .dropdown-menu,
+        .megamenu .dropdown-menu .tab-pane,
+        .megamenu .nav-tabs,
+        .megamenu .dropdown-menu .dropdown-menu {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+        }
+
+        .megamenu .dropdown-menu .withoutdesc ul li a {
+            color: #333333 !important;
+        }
+
+        .megamenu .dropdown-menu a,
+        .megamenu .dropdown-menu h5 {
+            color: #333333 !important;
+        }
+
+        .megamenu .dropdown-menu a:hover {
+            color: #319ccd !important;
+            text-decoration: none !important;
+        }
+
+        .megamenu .dropdown-menu h5 a {
+            color: #333333 !important;
+            font-weight: bold !important;
+        }
+
+        /* Ensure product grid text is visible */
+        .megamenu .team h5 {
+            color: #333333 !important;
+        }
+    </style>
 
 
-    <!-- CookieConsent -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.addEventListener("load", function(){
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": { "background": "#237afc" },
-                    "button": { "background": "#fff", "text": "#237afc" }
-                },
-                "position": "bottom",
-                "type": "opt-out",
-                "content": {
-                    "message": "This website uses cookies to ensure you get the best experience on our website.",
-                    "dismiss": "Allow cookies",
-                    "link": "Learn more",
-                    "href": "https://yes-weigh.github.io/weighvox/privacy.php/index.html"
-                }
-            });
-        });
-    </script>
-    </head>
+</head>
 
 <body id="topPage" data-spy="scroll" data-target=".navbar" data-offset="100">
 
@@ -487,8 +487,7 @@
                                                         style="padding:20px;height:1100px;">
                                                         <div class="row mt50">
                                                             <div class="col-md-2 col-sm-6 col-xs-6">
-                                                                <a
-                                                                    href="product-detail-SCANGLEPR90504-Kiosk.html">
+                                                                <a href="product-detail-SCANGLEPR90504-Kiosk.html">
                                                                     <div class="team team-three">
                                                                         <img src="assets/img/product/kiosk%20c1.png"
                                                                             class="img-responsive hover-rotate">
@@ -498,8 +497,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="col-md-2 col-sm-6 col-xs-6">
-                                                                <a
-                                                                    href="product-detail-SCANGLEPR83962-A5-POS.html">
+                                                                <a href="product-detail-SCANGLEPR83962-A5-POS.html">
                                                                     <div class="team team-three">
                                                                         <img src="assets/img/product/h2.jpg"
                                                                             class="img-responsive hover-rotate">
@@ -529,8 +527,7 @@
                                             <div id="tabjustifiedHome" class="tab-pane fade in active">
                                                 <div class="row mt50">
                                                     <div class="col-md-2 col-sm-6 col-xs-6">
-                                                        <a
-                                                            href="product-detail-SCANGLEPR59694-SGT-664A.html">
+                                                        <a href="product-detail-SCANGLEPR59694-SGT-664A.html">
                                                             <div class="team team-three">
                                                                 <img src="assets/img/product/h1.jpg"
                                                                     class="img-responsive hover-rotate">
@@ -540,8 +537,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col-md-2 col-sm-6 col-xs-6">
-                                                        <a
-                                                            href="product-detail-SCANGLEPR36069-SGT-668A.html">
+                                                        <a href="product-detail-SCANGLEPR36069-SGT-668A.html">
                                                             <div class="team team-three">
                                                                 <img src="assets/img/product/h.jpg"
                                                                     class="img-responsive hover-rotate">
@@ -551,8 +547,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col-md-2 col-sm-6 col-xs-6">
-                                                        <a
-                                                            href="product-detail-SCANGLEPR75192-A12-PRO.html">
+                                                        <a href="product-detail-SCANGLEPR75192-A12-PRO.html">
                                                             <div class="team team-three">
                                                                 <img src="assets/img/product/h4.jpg"
                                                                     class="img-responsive hover-rotate">
@@ -562,8 +557,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col-md-2 col-sm-6 col-xs-6">
-                                                        <a
-                                                            href="product-detail-SCANGLEPR40169-A5-POS.html">
+                                                        <a href="product-detail-SCANGLEPR40169-A5-POS.html">
                                                             <div class="team team-three">
                                                                 <img src="assets/img/product/h2%20%281%29.jpg"
                                                                     class="img-responsive hover-rotate">
@@ -603,8 +597,8 @@
                             US </a></li>
 
 
-                    <li class="dropdown"><a href="contact-us.html"
-                            class="dropdown-toggle color-light">CONTACT US </a></li>
+                    <li class="dropdown"><a href="contact-us.html" class="dropdown-toggle color-light">CONTACT US </a>
+                    </li>
 
 
                     <li class="dropdown"><a href="cloud.html" class="dropdown-toggle color-light">CLOUD <i
@@ -1460,8 +1454,8 @@ Corporate Office</p>
                                 target="_blank"><i class="fa fa-linkedin color-primary"></i></a>
                             <a href="https://www.facebook.com/weighvox" target="_blank"><i
                                     class="fa fa-instagram color-primary"></i></a>
-                            <a href="https://www.youtube.com/channel/UCQfv5cN1_LHYrOvzeDLZAmA"
-                                target="_blank"><i class="fa fa-youtube color-primary"></i></a>
+                            <a href="https://www.youtube.com/channel/UCQfv5cN1_LHYrOvzeDLZAmA" target="_blank"><i
+                                    class="fa fa-youtube color-primary"></i></a>
                         </div><br><br>
                         <!--  <h6 class="font-montserrat text-uppercase color-white">WORKING HOURS :</h6>
                          <P>9.30 to 5.30 ( Mon - Sat)</P> -->
@@ -1533,7 +1527,7 @@ Corporate Office</p>
      =====================================-->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js"
         data-cfasync="false"></script>
-    
+
 
 
 
@@ -1541,5 +1535,3 @@ Corporate Office</p>
 </body>
 
 </html>
-
-
